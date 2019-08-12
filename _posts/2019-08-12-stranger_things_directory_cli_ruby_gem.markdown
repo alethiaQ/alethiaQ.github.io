@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "**Stranger Things Directory CLI Ruby Gem**"
-date:       2019-08-12 20:19:19 +0000
+title:      "Stranger Things Directory CLI Ruby Gem"
+date:       2019-08-12 16:19:20 -0400
 permalink:  stranger_things_directory_cli_ruby_gem
 ---
 
