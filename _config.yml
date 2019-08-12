@@ -1,0 +1,20 @@
+# Site settings
+author: Alethia Quintero
+title: 
+header-img: img/home-bg.png
+email: alethiaq22@gmail.com
+copyright_name: Alethia Quintero
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  alethiaQ
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
