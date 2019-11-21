@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Single Page App "
-date:       2019-11-21 06:07:42 +0000
+date:       2019-11-21 01:07:43 -0500
 permalink:  single_page_app
 ---
 
