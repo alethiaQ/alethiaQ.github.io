@@ -7,6 +7,8 @@ permalink:  single_page_app
 
 JS Frontend and API Backend 
 
+Demo link https://youtu.be/M-6PmDbFpQA 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M-6PmDbFpQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ## Overview: 
 I created a single page app titled "He goes by Lo". Its based off the Lorax and basically, he is undercover because of current events and needs your help collecting trash (snake-game) and "growing trees" (points). In order for the points to really have a purpose, I created a user model to keep track of each players total tree score. 
 **Backend- **
