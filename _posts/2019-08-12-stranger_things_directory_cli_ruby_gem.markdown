@@ -1,27 +1,27 @@
 ---
 layout: post
-title:      "Stranger Things Directory CLI Ruby Gem"
+title:      "Simple Project Start to Run-"
 date:       2019-08-12 16:19:20 -0400
 permalink:  stranger_things_directory_cli_ruby_gem
 ---
 
+## Complete CLI-project methodology and implementation
 
-Beginning any project with a blank page is always daunting, especially when you have the freedom of choice to pick any focal point of the project. In this case, I knew I had to create a CLI ruby gem using scraped data from any web-page of my choice. The hardest part while getting started, was choosing a website that interested me and was "scrapeable". After many attempts, I finally found a webpage that interested me and was laid out well enough to scrape from. I chose two FANDOM Stranger things wiki articles, one containing trending characters, and the other about locations.  
+Beginning any project with a blank page is always daunting, even more so when you have the freedom to pick any topic. In this case, I knew I had to create a CLI ruby gem using scraped data from any web-page. After many attempts, I finally found a webpage that interested me and was laid out well enough to scrape from. I chose two FANDOM Stranger things wiki articles, one containing trending characters, and the other about locations.  
 
 
 **Getting Started**
-The best way to organize my thoughts and ensure I stayed on task, was to invision the big picture first, then work my way down to the nitty-gritty. Using a simple list, such as the ones below, I was able to imagine how I wanted my program to look, how I wanted the user to interact with it, and map how I wanted my data to be broken down. 
+The best way to organize my thoughts and ensure I stay on task- is to invision the big picture first, then work down to the "nitty-gritty". 
+
+Using a simple list, such as the ones below, I was able to imagine how I wanted my program to look, how I wanted the user to interact with it, and map how I wanted my data to be broken down. 
 
 **How I want my program to run overall: **
 * Welcome message
-* Present user with options (Location list, Character List) 
-* Present chosen list
-* Allow user to choose item to learn more about 
-* Present item, then bring user back to original choice option 
-* Exit program when user enters exit 
-* Exit message
-
-From here, I knew how I wanted the program to run and interact with a user. 
+* Output to user Category options (Location list, Character List) 
+* Output selected list- Allow user to choose item to learn more about 
+* Output item 
+* Start from top
+* Exit program when user enters exit
 
 **CLI Project design steps and notes: **
 * Gem bundle creator 
@@ -32,11 +32,15 @@ From here, I knew how I wanted the program to run and interact with a user.
 * Discover objects as I go
 * Refactor
 
-After googling around and watching youtube examples, I decided to use bundle gem 'gem-name' to create my gem infrastructure. This created a directory with all the files I would need to create my gem, including a gemspec, bin, lib, and basic setup folders/files. I decided to create a config folder that included an environment file to house everything my program needed to run; just a personal preference because for me it's easier to remember and work with when I have one place holding necessary files, also I think it's a little neater, and better practice since most programs use an environment file. 
+After brief research, I decided to use 'bundle gem new 'gem-name'' to create my projects' directory infrastructure. 
 
 ![img](https://i.imgur.com/U3PI436.png[/img])
 
-Once my file-tree was set up how I wanted, I had an executable, and cli.rb file in my lib folder, I implemented fake data straight in the cli file and mapped out my interface. Then, when that was running smoothing and I was able to '*gets*'  user input, it was almost time to scrape. Before I could scrape, I needed to decide what elements and data would be useful for my program. The easiest way for me to do this, was again, a brainstorming list of things I thought my object should have. A good way to get an idea of what the object should have, is to simply look at what information is provided on the webpage.  
+Once my files were set up,  I used basic test data directly within the file  to map out the flow of the entire app from start to finish before we subsitute with real data. 
+
+### Creating objects, Getting our Real Data 
+
+The goal of scraping our wiki page is to gather elements that hold value and use them to create relevant objects with various attributes. 
 
 **Location Object should have**
 * name 
@@ -59,14 +63,14 @@ Once my file-tree was set up how I wanted, I had an executable, and cli.rb file 
 # **Scraping**
 Scraping can seem like a daunting and tideous task at first, but once you get the hang of accessing data you want, the process can be almost effortless and easy. 
 
-To begin, I created what I call my "rough-scraper" file. In this file, I opened the webpage I intended to use with nokogiri and open uri, added a binding.pry command, and attempted to scrape down to the information I thought would be useful from my list. This process is probably the hardest part of scraping, but just keep trying and implementing different css selectors until you find something that works, no harm will be done because you are just in pry! 
+To begin, I opened the webpage I intended to use with nokogiri and open uri, added a binding.pry command, and tested various iterations to reach the values relevant to their corresponding attribute. This is probably the hardest part of scraping, but just keep trying and implementing different css selectors until you find something that works, no harm will be done because you are just in pry! 
 ```
 def open_page
     Nokogiri::HTML(open("https://strangerthings.fandom.com/wiki/Category:Characters"))
 		binding.pry
 end
 ```
-When I found something that worked, or was even close to what I wanted, I would create a comment in my file with those selectors and continue my search, trying different variations and iterations until I had an idea of how to access every piece of data I planned to use. 
+
 In order to keep my program stratified and concise, separted by function and implementation, I decided to create a scraper for the location homepage and character homepage. Since each webpage held individual items (characters and locations) each having their own url, I needed my program to scrape down to each url piece by piece, then send the information from that webpage to another file that parsed that page, collecting each objects attributes one by one, for each url. 
 **To visual this: **
 
