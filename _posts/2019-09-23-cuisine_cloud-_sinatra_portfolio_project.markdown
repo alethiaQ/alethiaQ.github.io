@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Cuisine Cloud- Sinatra Portfolio Project"
-date:       2019-09-23 19:49:54 +0000
+title:      "Cuisine Cloud- Sinatra Project"
+date:       2019-09-23 15:49:55 -0400
 permalink:  cuisine_cloud-_sinatra_portfolio_project
 ---
 
