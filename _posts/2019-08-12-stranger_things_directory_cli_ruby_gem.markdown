@@ -1,13 +1,13 @@
 ---
 layout: post
-title:      "Simple Project Start to Run-"
+title:      "Simple CLI Project Start to Run-"
 date:       2019-08-12 16:19:20 -0400
 permalink:  stranger_things_directory_cli_ruby_gem
 ---
 
 ## Complete CLI-project methodology and implementation
 
-Beginning any project with a blank page is always daunting, even more so when you have the freedom to pick any topic. In this case, I knew I had to create a CLI ruby gem using scraped data from any web-page. After many attempts, I finally found a webpage that interested me and was laid out well enough to scrape from. I chose two FANDOM Stranger things wiki articles, one containing trending characters, and the other about locations.  
+Beginning any project with a blank page is always daunting, even more so when you have the freedom to pick any topic. In this case, I had to create a CLI ruby gem with scraped data from any web-page. After many attempts, I finally found a webpage that interested me and was laid out well enough to scrape from. I chose two FANDOM Stranger things wiki articles, one containing trending characters, and the other about show locations.  
 
 
 **Getting Started**
@@ -23,16 +23,16 @@ Using a simple list, such as the ones below, I was able to imagine how I wanted 
 * Start from top
 * Exit program when user enters exit
 
-**CLI Project design steps and notes: **
-* Gem bundle creator 
+**Basic CLI Project design steps and notes: **
+* Gem bundle creator (after research)
 * Create execution file 
-* Create CLI file in lib that the exe file calls to run the program 
-* Use practice data to make sure the exe file works 
+* Create CLI logic file in lib that the exe file calls to run the program 
+* Use "fake" practice data to make sure the exe file works 
 * Stub out fake data with real data from different files
 * Discover objects as I go
 * Refactor
 
-After brief research, I decided to use 'bundle gem new 'gem-name'' to create my projects' directory infrastructure. 
+After brief research, I decided to use bundlers 'bundle gem new 'gem-name'' to create my projects' directory infrastructure. This creates our new app with the appropriate gemfile, environment, and other necessary files. 
 
 ![img](https://i.imgur.com/U3PI436.png[/img])
 
