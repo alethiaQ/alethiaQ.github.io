@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: alethiaq22@gmail.com
 copyright_name: Alethia Quintero
 description: > # this means to ignore newlines until "baseurl:"
-  Web-development and software coding walkthroughs and demo's
+  Web-development walkthroughs and demo's
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  alethiaQ
