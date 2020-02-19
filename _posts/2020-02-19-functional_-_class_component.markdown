@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Functional -> Class Component"
-date:       2020-02-19 18:53:28 +0000
+date:       2020-02-19 13:53:29 -0500
 permalink:  functional_-_class_component
 ---
 
