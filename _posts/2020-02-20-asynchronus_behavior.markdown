@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Asynchronus Behavior"
-date:       2020-02-20 21:19:08 +0000
+date:       2020-02-20 16:19:09 -0500
 permalink:  asynchronus_behavior
 ---
 
@@ -23,14 +23,15 @@ Say we have a function:
 		.then( r=> console.log("b"))
 		.then( data => console.log("c", data)
 		console.log("d") ```
-	What would be rendered in the console? **Before scrolling down, take a moment to think about it and write your answers down**
+	What would be rendered in the console? **Before scrolling down, take a moment to think about it and write your answers down.**
 		Keep in mind ![Imgur](https://i.imgur.com/PeIJu3h.jpg?1)
 		
 		The console would render:  a, d, b, c 
 		Because asynchronus programming is an impatient guy, he isn't going to wait for the fetch to be resolved or rejected before jumping down past it and its .then methods, to the final console.log 
 		
 Now what about: 
-``` 
+
+```
    console.log("a")
 		fetch("http:/somesite")
 		.then( r=> console.log("b"))
@@ -38,11 +39,12 @@ Now what about:
 		
 		for (let i = 0; i <= 50; i++) {
 		console.log(i)
-		} ```
+		} 
+	```
 		
 
-	The console would return: a, 1...50, b, c 
-	You may be wondering why the for-loop did all of its buisness before moving on, seems a little.. synchronus. Well thats because its a synchonus function within our asynchronus code. Although our code is working asynchronously generally, our program will hit the loop asynchronously (before the promise is resolved),  wait until the synchronus bit is complete, then continue on in its normal fashion. It's a bit confusing.. but just think about it like normal function execution, when our engine enters into any function it's not going to just stop midway and complete another task, it will see it all the way through, unless told other wise. Since our example lives within the same scope, it behaves this way. It enters the for-loop, does the work required inside, then exits out and handles unfinished business (in this case .then() methods belonging to our fetch object).  
+The console would return: a, 1...50, b, c 
+You may be wondering why the for-loop did all of its buisness before moving on, seems a little.. synchronus. Well thats because its a synchonus function within our asynchronus code. Although our code is working asynchronously generally, our program will hit the loop asynchronously (before the promise is resolved),  wait until the synchronus bit is complete, then continue on in its normal fashion. It's a bit confusing.. but just think about it like normal function execution, when our engine enters into any function it's not going to just stop midway and complete another task, it will see it all the way through, unless told other wise. Since our example lives within the same scope, it behaves this way. It enters the for-loop, does the work required inside, then exits out and handles unfinished business (in this case .then() methods belonging to our fetch object).  
 		
 		
 
