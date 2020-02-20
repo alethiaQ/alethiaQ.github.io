@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "React vs AngularJS"
-date:       2020-02-20 23:13:05 +0000
+date:       2020-02-20 18:13:06 -0500
 permalink:  react_vs_angularjs
 ---
 
 
-During the course of my job search, there seemed to be an even distribution of compaines hiring Javascript experienced employees using React or AngularJS. At Flatiron, we are taught React (because it is awesome and statistically more popular) and although I may not have experience with Angular, I wanted to be able to atleast highlight the differences and similarities between the two. Basically, to show I am aware and willing to learn, and be able to answer some questions about Angular using my React knowledge and highlighting what may be contrasting or similar to what I already know. So I decided to do some research of my own comparing the two; even though both are JavaScript children.. the differences outweight the similarities by a long shot. 
+During the course of my job search, there seemed to be an even distribution of companies hiring Javascript experienced employees using React or AngularJS. At Flatiron, we are taught React (because it is awesome and statistically more popular) and although I may not have experience with Angular, I wanted to be able to atleast highlight the differences and similarities between the two. Basically, to show I am aware and willing to learn, and be able to answer some questions about Angular using my React knowledge and highlighting what may be contrasting or similar to what I already know. So I decided to do some research of my own comparing the two; even though both are JavaScript children.. the differences outweight the similarities by a long shot. 
 
 Off the bat, the biggest difference between the two- 
 **Angular is a full framework** and **React is a javascript library**. What this means is Angular is a full-fledged MVC framework (think Rails for Ruby) written in typescript, comes with a lot of its own functionality, contains rules for structuring, and is a lot less flexible. React, being a Javascript view library, is much more flexible, has no real structuring rules, and requires additional libraries to add functionality. 
